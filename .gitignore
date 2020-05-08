@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *
 !*/
 !**.java
@@ -11,10 +12,29 @@
 .mtj.tmp/
 *.jar
 *.war
+=======
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+>>>>>>> 046ddac843d41d4970a9031fbe2d324a26bca1ff
 *.ear
 *.zip
 *.tar.gz
 *.rar
+<<<<<<< HEAD
 hs_err_pid*
 *~
 .fuse_hidden*
@@ -48,3 +68,8 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.lnk
+=======
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+>>>>>>> 046ddac843d41d4970a9031fbe2d324a26bca1ff
