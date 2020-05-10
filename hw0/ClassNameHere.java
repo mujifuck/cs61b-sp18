@@ -2,12 +2,10 @@ public class ClassNameHere {
 	/** Returns the maxinum value from m.  */
 	public static int max(int[] m) {
 		int max = 0;
-		int i = 0;
-		while (i<m.length) {
+		for (int i = 0;i < m.length; i = i + 1) {
 			if (m[i]>max) {
 				max = m[i];
 			}
-			i = i+1;
 		}
 		return max;
 	}
