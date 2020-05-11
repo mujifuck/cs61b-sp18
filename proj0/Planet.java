@@ -5,11 +5,14 @@ public class Planet {
 	double yyVel = 4.0;
 	double mass = 5.0;
 	String imgFileName = "jupiter.gif";
+	static final double G = 6.67 * 10e-12;
 	public Planet(double xP , double yP, double xV, double yV, double m, String img) {
 		xxPos = xP;
 		yyPos = yP;
 		xxVel = xV;
 		yyVel = yV;
+		mass = m;
+		img = imgFileName;
 	}
 	public Planet(Planet b) {
 
@@ -20,5 +23,11 @@ public class Planet {
 		double dy = this.yyPos - b.yyPos;
 		double distance = dx * dx + dy * dy;
 		return Math.sqrt(distance);
+	}
+
+	public double calcForceExertedBy(Planet c) {
+		double r = this.calcDistance(c);
+		double f = (G * this.mass * c.mass)/(r * r);
+		return f;
 	}
 }
